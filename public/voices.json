@@ -1,0 +1,22 @@
+[
+  { "id": "v001", "label": "Ada", "audioSrc": "/audio/Ada.mp3", "gender": "female", "provider": "azure" },
+  { "id": "v002", "label": "Alexander", "audioSrc": "/audio/Alexander.mp3", "gender": "male", "provider": "elevenlabs"},
+  { "id": "v003", "label": "Alice", "audioSrc": "/audio/Alice.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v004", "label": "Ash", "audioSrc": "/audio/AshA.mp3", "gender": "male", "provider": "azure"},
+  { "id": "v005", "label": "Bessie", "audioSrc": "/audio/Bessie.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v006", "label": "Clarice", "audioSrc": "/audio/Clarice.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v007", "label": "Clel", "audioSrc": "/audio/Clel.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v008", "label": "Cynthia", "audioSrc": "/audio/Cynthia.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v009", "label": "Daniel", "audioSrc": "/audio/Daniel.mp3", "gender": "male", "provider": "elevenlabs"},
+  { "id": "v010", "label": "George", "audioSrc": "/audio/George.mp3", "gender": "male", "provider": "elevenlabs"},
+  { "id": "v011", "label": "Jorge", "audioSrc": "/audio/JorgeA.mp3", "gender": "male", "provider": "azure"},
+  { "id": "v012", "label": "Latisha", "audioSrc": "/audio/Latisha.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v013", "label": "Lily", "audioSrc": "/audio/Lily.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v014", "label": "Macerio", "audioSrc": "/audio/Macerio.mp3", "gender": "male", "provider": "azure"},
+  { "id": "v015", "label": "Meera", "audioSrc": "/audio/Meera.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v016", "label": "Ollie", "audioSrc": "/audio/OllieA.mp3", "gender": "male", "provider": "azure"},
+  { "id": "v017", "label": "Orla", "audioSrc": "/audio/Orla.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v018", "label": "Thierry", "audioSrc": "/audio/ThierryA.mp3", "gender": "male", "provider": "azure"},
+  { "id": "v019", "label": "Shana", "audioSrc": "/audio/Shana.mp3", "gender": "female", "provider": "elevenlabs"},
+  { "id": "v020", "label": "Tristan", "audioSrc": "/audio/TristanA.mp3", "gender": "male", "provider": "azure"}
+]
