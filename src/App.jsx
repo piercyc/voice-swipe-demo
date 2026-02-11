@@ -1,16 +1,25 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
+const BASE = import.meta.env.BASE_URL;
+
+function withBase(p) {
+  if (!p) return p;
+  if (/^https?:\/\//i.test(p)) return p;            // allow full URLs
+  const clean = p.startsWith("/") ? p.slice(1) : p; // remove leading slash
+  return `${BASE}${clean}`;
+}
+
 /**
  * App background:
  * Put a file at:  /public/app-bg.jpg   (or .png/.webp)
  */
-const APP_BACKGROUND = "/app-bg.png";
+const APP_BACKGROUND = withBase("/app-bg.png");
 
 /**
  * Card backgrounds:
  * Put files at: /public/card-bg-1.jpg, /public/card-bg-2.jpg, ...
  */
-const CARD_BACKGROUNDS = ["/card-bg-1.png", "/card-bg-2.png", "/card-bg-3.png", "/card-bg-4.png", "/card-bg-5.png", "/card-bg-6.png", "/card-bg-7.png","/card-bg-8.png","/card-bg-9.png","/card-bg-10.png"];
+const CARD_BACKGROUNDS = ["withBase("card-bg-1.png"), "withBase("card-bg-2.png"), "withBase("card-bg-3.png"), "withBase("card-bg-4.png"), "withBase("card-bg-5.png"), "withBase("card-bg-6.png"), "withBase("card-bg-7.png"),"withBase("card-bg-8.png"),"withBase("card-bg-9.png"), "withBase("card-bg-10.png")];
 
 
 function uid() {
@@ -398,7 +407,7 @@ export default function App() {
     let alive = true;
 
     async function load() {
-      const res = await fetch("/voices.json", { cache: "no-store" });
+      const res = await fetch("withBase("voices.json"), { cache: "no-store" });
       const data = await res.json();
 
       const normalized = (Array.isArray(data) ? data : []).map((v, i) => {
@@ -411,7 +420,7 @@ export default function App() {
         return {
           id: v.id ?? `v${String(i + 1).padStart(3, "0")}-${uid()}`,
           label: v.label ?? `Voice ${i + 1}`,
-          audioSrc: v.audioSrc,
+          audioSrc: withBase(v.audioSrc),
           bgIndex: i,
           gender,
           provider, // e.g. "elevenlabs" | "azure"
