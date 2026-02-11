@@ -417,7 +417,7 @@ export default function App() {
     let alive = true;
 
     async function load() {
-      const res = await fetch("withBase("voices.json"), { cache: "no-store" });
+      const res = await fetch(withBase("voices.json"), { cache: "no-store" });
       const data = await res.json();
 
       const normalized = (Array.isArray(data) ? data : []).map((v, i) => {
