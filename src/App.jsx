@@ -13,14 +13,24 @@ function withBase(p) {
  * App background:
  * Put a file at:  /public/app-bg.jpg   (or .png/.webp)
  */
-const APP_BACKGROUND = withBase("/app-bg.png");
+const APP_BACKGROUND = withBase("app-bg.png");
 
 /**
  * Card backgrounds:
  * Put files at: /public/card-bg-1.jpg, /public/card-bg-2.jpg, ...
  */
-const CARD_BACKGROUNDS = ["withBase("card-bg-1.png"), "withBase("card-bg-2.png"), "withBase("card-bg-3.png"), "withBase("card-bg-4.png"), "withBase("card-bg-5.png"), "withBase("card-bg-6.png"), "withBase("card-bg-7.png"),"withBase("card-bg-8.png"),"withBase("card-bg-9.png"), "withBase("card-bg-10.png")];
-
+const CARD_BACKGROUNDS = [
+  withBase("card-bg-1.png"),
+  withBase("card-bg-2.png"),
+  withBase("card-bg-3.png"),
+  withBase("card-bg-4.png"),
+  withBase("card-bg-5.png"),
+  withBase("card-bg-6.png"),
+  withBase("card-bg-7.png"),
+  withBase("card-bg-8.png"),
+  withBase("card-bg-9.png"),
+  withBase("card-bg-10.png"),
+];
 
 function uid() {
   return Math.random().toString(16).slice(2);
